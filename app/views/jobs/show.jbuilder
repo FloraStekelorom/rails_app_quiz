@@ -1,4 +1,5 @@
 json.job do
+    json.id                    @job.id
     json.url                   @job.url
     json.employer_name         @job.employer_name
     json.employer_description  @job.employer_description

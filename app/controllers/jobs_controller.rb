@@ -12,7 +12,7 @@ class JobsController < ApplicationController
   end
 
   def show
-    @job = Job.find_by(employment_type_id: params[:employment_type_id])
+    @job = Job.find(params[:id])
     render 'jobs/show.jbuilder'
   end
 
